@@ -16,7 +16,7 @@ const Register = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "https://mern-auth-otp-server.vercel.app/api/auth/register",
+        "https://bdapi.labontest.tech/api/auth/register",
         { email, password }
       );
       setMessage(response.data.msg);
@@ -33,7 +33,7 @@ const Register = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "https://mern-auth-otp-server.vercel.app/api/auth/verify-otp",
+        "https://bdapi.labontest.tech/api/auth/verify-otp",
         { email, otp }
       );
       setMessage(response.data.msg);
@@ -48,7 +48,7 @@ const Register = () => {
   };
 
   const handleGoogleRegister = () => {
-    window.location.href = "https://mern-auth-otp-server.vercel.app/api/auth/google";
+    window.location.href = "https://bdapi.labontest.tech/api/auth/google";
   };
 
   return (
