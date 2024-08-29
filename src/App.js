@@ -9,7 +9,7 @@ const App = () => {
   return (
     <Router>
       <div className="text-center">
-        <h1 className="text-4xl text-fuchsia-500 font-bold mb-5 mt-1">MERN Auth with OTP</h1>
+        <h1 className="text-4xl text-fuchsia-500 font-bold mb-5 mt-1">MERN Auth with OTP 2024</h1>
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/register" element={<Register />} />
